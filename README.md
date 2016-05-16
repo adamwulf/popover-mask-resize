@@ -7,4 +7,4 @@ The amount of clipping seems to be related to the animation duration + the amoun
 Example of clipped content during animation:
 
 
-![](https://raw.githubusercontent.com/adamwulf/popover-mask-resize/f1c2827f7ed0fe6cb570c8de2448036ed7f5958e/popover-mask-resize/example.png)
+![](https://raw.githubusercontent.com/adamwulf/popover-mask-resize/46fb6a7354ee5803f6a9b13dd67fb0967b94d2c6/popover-mask-resize/example.png)
