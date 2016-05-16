@@ -11,6 +11,9 @@
 		C5B9056F1CEA48C0002943BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B9056E1CEA48C0002943BF /* main.m */; };
 		C5B905711CEA48C0002943BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B905701CEA48C0002943BF /* Assets.xcassets */; };
 		C5B905741CEA48C0002943BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B905721CEA48C0002943BF /* MainMenu.xib */; };
+		C5B9058E1CEA4A65002943BF /* PopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B9058C1CEA4A65002943BF /* PopoverContentViewController.m */; };
+		C5B9058F1CEA4A65002943BF /* PopoverContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B9058D1CEA4A65002943BF /* PopoverContentViewController.xib */; };
+		C5B905911CEA4C3E002943BF /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B905901CEA4C3E002943BF /* example.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		C5B905701CEA48C0002943BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B905731CEA48C0002943BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C5B905751CEA48C0002943BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B9058B1CEA4A65002943BF /* PopoverContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverContentViewController.h; sourceTree = "<group>"; };
+		C5B9058C1CEA4A65002943BF /* PopoverContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverContentViewController.m; sourceTree = "<group>"; };
+		C5B9058D1CEA4A65002943BF /* PopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverContentViewController.xib; sourceTree = "<group>"; };
+		C5B905901CEA4C3E002943BF /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +60,16 @@
 		C5B905691CEA48C0002943BF /* popover-mask-resize */ = {
 			isa = PBXGroup;
 			children = (
+				C5B905901CEA4C3E002943BF /* example.png */,
 				C5B9056A1CEA48C0002943BF /* AppDelegate.h */,
 				C5B9056B1CEA48C0002943BF /* AppDelegate.m */,
 				C5B905701CEA48C0002943BF /* Assets.xcassets */,
 				C5B905721CEA48C0002943BF /* MainMenu.xib */,
 				C5B905751CEA48C0002943BF /* Info.plist */,
 				C5B9056D1CEA48C0002943BF /* Supporting Files */,
+				C5B9058B1CEA4A65002943BF /* PopoverContentViewController.h */,
+				C5B9058C1CEA4A65002943BF /* PopoverContentViewController.m */,
+				C5B9058D1CEA4A65002943BF /* PopoverContentViewController.xib */,
 			);
 			path = "popover-mask-resize";
 			sourceTree = "<group>";
@@ -128,8 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B9058F1CEA4A65002943BF /* PopoverContentViewController.xib in Resources */,
 				C5B905711CEA48C0002943BF /* Assets.xcassets in Resources */,
 				C5B905741CEA48C0002943BF /* MainMenu.xib in Resources */,
+				C5B905911CEA4C3E002943BF /* example.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +155,7 @@
 			files = (
 				C5B9056F1CEA48C0002943BF /* main.m in Sources */,
 				C5B9056C1CEA48C0002943BF /* AppDelegate.m in Sources */,
+				C5B9058E1CEA4A65002943BF /* PopoverContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
