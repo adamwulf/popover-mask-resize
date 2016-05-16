@@ -35,6 +35,7 @@
         PopoverContentViewController* contentViewController = [[PopoverContentViewController alloc] init];
         
         [self setPopover:[[NSPopover alloc] init]];
+        contentViewController.popover = [self popover];
         [[self popover] setContentViewController:contentViewController];
         [[self popover] setDelegate:self];
         [[self popover] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];

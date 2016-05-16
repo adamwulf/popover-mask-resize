@@ -14,32 +14,37 @@
 
 @end
 
-@implementation PopoverContentViewController
+@implementation PopoverContentViewController{
+    CGFloat targetHeight;
+}
 
 -(NSSize) preferredContentSize{
     NSSize size = [super preferredContentSize];
-    size.width = 100;
+    size.width = 200;
+    size.height = targetHeight;
     return size;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    targetHeight = 100;
     
     [[self view] setWantsLayer:YES];
     [[[self view] layer] setBackgroundColor:[[NSColor redColor] CGColor]];
-    
-    [self setHeightConstraint:[NSLayoutConstraint constraintWithItem:[self view] attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:100]];
-    [[self view] addConstraint:[self heightConstraint]];
 }
 
 
 -(IBAction) resizePopover:(id)sender{
-    if([[self heightConstraint] constant] == 100){
-        [[[self heightConstraint] animator] setConstant:400];
-    }else{
-        [[[self heightConstraint] animator] setConstant:100];
-    }
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        [context setAllowsImplicitAnimation:YES];
+        if(targetHeight == 100){
+            targetHeight = 600;
+        }else{
+            targetHeight = 100;
+        }
+        [[self popover] setContentSize:[self preferredContentSize]];
+    } completionHandler:nil];
 }
 
 @end

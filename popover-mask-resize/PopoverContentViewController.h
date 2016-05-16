@@ -10,4 +10,6 @@
 
 @interface PopoverContentViewController : NSViewController
 
+@property (strong) NSPopover *popover;
+
 @end
